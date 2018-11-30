@@ -99,7 +99,7 @@ import './index.css'
         const history = this.state.history;
         const current = history[this.state.stepNumber];
         const winner = calculateWinner(current.squares);
-
+        console.log(history)
         const moves = history.map((step, move) => {
             const currentLocation = step.currentLocation ? `(${step.currentLocation})` : '';
 
